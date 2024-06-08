@@ -23,7 +23,7 @@ def item(request):
 def detail(request, item_id):
     item = Item.objects.get(pk=item_id)
     context = {
-        "item":item
+        "item":item,
     }
     return render(request, "food/detail.html", context)
 
